@@ -1,0 +1,1030 @@
+/* html background and frame */
+html {
+    background: rgb(136, 186, 221);
+    font-family: "Kodchasan", sans-serif;
+    height: 100%;
+}
+ 
+body {
+    background-color: white;
+    box-shadow: rgb(51, 51, 51) 10px 0px 40px, rgb(51, 51, 51) -10px 0px 40px;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    min-height: 100%;   
+    margin: 0px auto;
+    min-width: 400px;
+    max-width: 1100px;   
+    width: 100%; 
+}
+
+/* header style rules */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 10px;
+    background-color: #f1f1f1;
+    position: relative;
+}
+
+.logo img {
+    width: 50%;
+    margin-left: 20%;
+}
+  
+/* top nav styles */
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    font-size: 15px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.nav a.active {
+    background-color: rgb(24, 137, 37);
+    color: white;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    display: none;
+    cursor: pointer;
+}
+  
+.nav-toggle-label img {
+    width: 30px;
+    height: auto;
+}
+
+/* footer style rules */
+footer {
+    text-align: center;
+    background-color: #f1f1f1;
+    color: black;
+    font-size: small;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+    padding: 12px;
+    border-radius: 4px;
+}
+
+.footer-nav a:hover {
+    background-color: #ddd;
+}
+
+.reach-out {
+    background-color: rgb(138, 182, 144);
+    color: black;
+    text-align: left;
+    overflow: auto;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-column-gap: 20px;
+}
+
+.reach-out h1 {
+    font-weight: bolder;
+    font-size: 9em;
+    padding: 10% 0 10% 20%;
+}
+
+.reach-out p {
+    text-align: left;
+    font-size: 15px;
+    margin: 15% 40% 2% 5%;
+}
+
+footer .click-me {
+    margin: 10% 5%;
+}
+
+.social-links {
+    display: block;
+    width: 50%;
+    text-align: left;
+    margin: 10% 0 2% 5%;
+}
+
+.social-links img {
+    width: 15%;
+    padding: 0 2% 3% 0;
+}
+
+/* hide mobile content */
+.tab-desk {
+    display: none;
+}
+
+/* home page styles */
+#banner {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.banner-video video {
+    max-width: 4096px;
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5em;
+}
+
+/* style templates */
+.area .click-me {
+    margin-left: 10%;
+}
+
+.click-me-blue {
+    margin-left: 10%;
+}
+
+.click-me-blue a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #53769b;
+    padding: 12px 30px; 
+    border-radius: 30px;
+}
+
+.click-me-green {
+    margin-left: 10%;
+}
+
+.click-me-green a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgb(138, 182, 144);
+    padding: 12px 30px; 
+    border-radius: 30px;
+}
+
+.click-me a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: white;
+    padding: 12px 30px; 
+    border-radius: 30px;
+}
+
+.click-me-img {
+    height: 15px;
+    padding-left: 2%;
+}
+
+.white {
+    background-color: white;
+    color: black;
+}
+
+.blue {
+    background-color: #53769b;
+    color: white;
+}
+
+.green {
+    background-color: rgb(138, 182, 144);
+    color: black;
+}
+
+.yellow {
+    background-color: #eaa653;;
+    color: white;
+}
+
+.teal {
+    background-color: #445f54;
+    color: white;
+}
+
+.area {
+    text-align: left; 
+    padding-bottom: 5%;
+}
+
+.grid-area {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-gap: 5px;
+}
+
+.mini-area {
+    margin: 0 0 2% 10%;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 20px;
+    padding-right: 30px;
+}
+
+.area h2 {
+    font-size: 2.75em;
+    padding: 8% 0 1% 10%;
+}
+
+.area h3 {
+    font-size: 2em;
+    font-weight: bold;
+    padding: 8% 0 2% 10%;
+}
+
+.area h4 {
+    font-size: 1.75em;
+    padding: 8% 0 2% 10%;
+}
+
+.area h5 {
+    font-size: 1.5em;
+    padding: 0 20% 4.5% 10%;
+    font-weight: bold;
+}
+
+.area ul {
+    font-size: 1em;
+    margin-left: 25%;
+}
+
+.area ul.closer {
+    margin: 0 0 5% 15%;
+}
+
+.area p {
+    font-size: 1em;
+    padding: 0 20% 4.5% 10%;
+}
+
+.about-area p {
+    padding: 0 10% 10%;
+}
+
+.area table {
+    margin: 2% 20% 1% 10%;
+    width: 70%;
+}
+
+.area th, td {
+    width: 100px;
+}
+
+.area table th {
+    font-size: 1.5em;
+}
+
+.area table td {
+    text-align: left;
+    padding: 0;
+}
+
+.area ul {
+    display: inline-block;
+}
+
+img.tall {
+    width: 30%;
+    height: 450px;
+    object-fit: cover;
+}
+
+img.tall-small {
+    width: 20%;
+    height: 300px;
+    object-fit: cover;
+}
+
+img.about-image {
+    width: 40%;
+    height: 300px;
+    object-fit: cover;
+}
+
+img.about-a {
+    float: left;
+    border-radius: 0 30px 30px 0;
+    margin-right: 1%;
+}
+
+img.about-b {
+    float: right;
+    border-radius: 30px 0 0 30px;
+    margin-left: 1%;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+/* home page */
+
+article.latest-work, article.latest-work2 {
+    padding: 0;
+    margin: 0
+}
+
+article.latest-work p, article.latest-work2 p {
+    padding: 10px;
+    margin: 0 5% 5% 45%;
+}
+
+article.latest-work h4, article.latest-work2 h4 {
+    padding: 5% 10px 0;
+    margin-left: 45%;
+}
+
+article.latest-work img, article.latest-work2 img {
+    border-radius: 30px;
+    margin-left: 2%;
+}
+
+/* header elements of the pages */
+h6 {
+    font-size: 1.25em;
+    text-align: center;
+    font-weight: normal;
+}
+
+p.summary-text {
+    padding: 0 10% 3%;
+    font-size: 1.25em;
+    text-align: center;
+}
+
+/* resume page */
+h3.others {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 5%;
+}
+
+h4.others {
+    text-align: center;
+    font-size: 1.75em;
+    font-weight: bold;
+    margin: 5% 0;
+}
+
+#resume h5 {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 40px 8% 20px 8%;
+    padding-top: 30px;
+    border-top: 2px dashed rgb(105, 105, 105);
+}
+
+#resume table {
+    border-radius: 4px;
+    color: #000000;
+    width: 100%;
+}
+
+#resume table td {
+    text-align: center;
+    padding-left: 10px;
+    word-wrap: break-word;
+}
+
+#resume dl dt {
+    margin: 0 8%;
+    font-weight: bold;
+    font-size: 1.15em;
+}
+
+#resume dl dd {
+    font-size: 1em;
+    margin: 0 12%;
+    padding-top: 20px;
+}
+
+#resume dl dd.sub {
+    margin: 0 8%;
+    font-style: italic;
+    padding-top: 5px;
+}
+
+#resume ul {
+    margin: 0 20%;
+    list-style-type: square;
+    padding-bottom: 10px;
+}
+
+#resume ul li {
+    padding-bottom: 5px;
+}
+
+#resume .res-ex {
+    float: left;
+    width: 50%;
+    padding-bottom: 3%;
+}
+
+#resume aside:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#resume .res-ex span.period {
+    float: right;
+    font-size: 0.8em;
+    font-weight: normal;
+}
+
+    /* resume form styles */
+
+form {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0 10%;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+form fieldset, textarea {
+    border: 1px solid black;
+    padding: 2%;
+    border-radius: 5px;
+}
+
+form .field-1 label { 
+    text-align: left;
+    font-weight: normal;
+}
+
+form legend { 
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+form p {
+    font-size: 1em;
+    line-height: 2em;
+    text-align: left;
+}
+
+form .field-1 input, select#inquiryList {
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 2px 20px 2px 2px;
+    margin-left: 2px;
+}
+
+form textarea {
+    height: 150px;
+    width: 300px;
+}
+
+form table {
+    margin: 10px 0 20px;
+    width: 100%;
+}
+
+form table td {
+    text-align: left;
+    padding: 15px;
+}
+
+form .field-2 label {
+    text-align: left;
+    font-weight: normal;
+}
+
+.submit-btn #mySubmit { 
+    grid-column: 1 / span 2;
+    text-align: center;
+    border-radius: 3px;
+    margin: 0 92% 5%;
+    padding: 14px 16px;
+    font-size: 1.15em;
+}
+
+.submit-btn #mySubmit:hover {
+    background-color:rgb(24, 137, 37);
+    color: white;
+}
+
+.submit-btn #mySubmit:active {
+    background-color:rgb(16, 81, 23);
+}
+
+/* research and art opening pages */
+.container {
+    overflow: auto;
+    display: grid;
+    grid-template-columns: 31.5% 31.5% 31.5%;
+    grid-column-gap: 20px;
+    margin: 0 1% 5%;
+}
+
+.container img {
+    max-width: 3024px;
+    height: 250px;
+    object-fit: cover;
+    width: 90%;
+    margin-top: 5%;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.col-1, .col-2, .col-3 {
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 100%;
+    text-align: center;
+    margin: 1%;
+}
+
+.container a.hi {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.link-text {
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+/* about page styles */
+section.about {
+    display: grid;
+    grid-template-columns: 40% 35% 20%;
+    grid-column-gap: 10px;
+    margin: 5% 2%;
+}
+
+section.about p { 
+    text-align: right;
+    margin: 15% 0;
+}
+
+section.about div img {
+    width: 95%;
+    margin: 0 1%;
+}
+
+section.about div h3 {
+    text-align: left;
+    margin: 50% 0;
+}
+
+.banner-image img {
+    max-width: 4096px;
+    height: 250px;
+    width: 70%;
+    object-fit: cover;
+    margin: 3% 0 5%;
+    border-radius: 10px;
+}
+
+article h5 {
+    font-size: 1.2em;
+    text-align: center;
+    padding: 2%;
+}
+
+/* banner styles for linked research & arts pages */
+h2.banner {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    padding: 30px 0;
+    margin: 0 20%;
+    border-radius: 0 0 10px 10px;
+}
+
+h2.edu { background-color: #eaa653;}
+
+h2.psych { background-color: #eaa653;}
+
+h2.socio { background-color: #eaa653;}
+
+h2.graphic { background-color: #445f54;}
+
+h2.draw { background-color: #eac753;}
+
+h2.photo { background-color: #3b653b;}
+
+/* article styles for research & arts pages */
+article p {
+    text-align: left;
+    font-size: 1em;
+    padding: 0 5%;
+}
+
+iframe { 
+    margin: 8% 2% 1%;
+    float: left;
+}
+
+.area img.a { float: left;}
+
+.area img.b { float: right;}
+
+.area img.xxsm { width: 20%;}
+
+.area img.xsm { width: 30%;}
+
+.area img.sm { width: 35%;}
+
+.area img.med { width: 40%;}
+
+.area img.big { width: 50%;}
+
+.area img.huge {width: 90%;}
+
+    /* research headers */
+h5.research-title {
+    color: white;
+    font-size: 1.25em;
+    text-align: center;
+    padding: 30px 0;
+    margin: 0 30% 5%;
+    border-radius: 0 0 10px 10px;
+}
+
+h5.sociology { background-color: #ab7534;}
+
+    /* education page */
+article.education {
+    margin: 3% 10%;
+}
+
+article.education p {
+    text-align: center;
+    padding: 10px;
+    margin: 0 20%;
+}
+
+article.education img {
+    margin: 2% 25%;
+    width: 50%;
+    border-radius: 20px;
+}
+
+/* sociology page */
+
+article h5.sub {
+    font-weight: normal;
+    text-decoration: underline;
+    text-align: left;
+    padding-left: 5%;
+}
+
+/* top graphics/draw page */
+section#trio-container {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-column-gap: 10px;
+    margin: 5% 12% 0;
+}
+
+section#trio-container img {
+    width: 90%;
+    border: 7px solid #b1b1b6;
+    object-fit: cover;
+}
+
+    /* applewood project */
+section#apple video {
+    max-width: 4096px;
+    height: 300px;
+    width: 80%;
+    object-fit: cover;
+    border: 7px solid #b1b1b6;
+    margin: 5% 10% 0;
+}
+
+    /* pantheon travel banner */
+section#pantheon {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-column-gap: 10px;
+    padding: 5% 20% 0 25%;
+}
+
+section#pantheon img {
+    width: 90%;
+    border: 7px solid #b1b1b6;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile & Tablet Viewport Media Queries */
+@media (max-width: 768px) {
+    /* hiding mobile */
+    .mobile { 
+        display: none;
+    }
+
+    /* header style rules */
+    .logo img {
+        width: 60%;
+    }
+    
+    /* navigation area style rules */
+    .nav {
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #f4f4f4;
+        width: 200px;
+        border: 1px solid #ccc;
+        display: none;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .nav-toggle-label {
+        display: block;
+    }
+
+    .nav-toggle:checked + .nav-toggle-label + .nav {
+        display: flex;
+    }
+
+    .nav ul {
+        padding-left: 0;
+    }
+
+    /* footer styles */
+    .reach-out {
+        display: block;
+        text-align: center;
+    }
+      
+    .reach-out h1 {
+        font-size: 3em;
+        padding: 20px;
+        text-align: center;
+    }
+      
+    .reach-out p {
+        margin: 20px;
+        text-align: center;
+    }
+      
+    .click-me {
+        margin: 20px auto;
+        text-align: center;
+    }
+      
+    .social-links {
+        width: 100%;
+        text-align: center;
+        margin: 5% auto;
+    }
+      
+    .social-links img {
+        width: 10%;
+        padding: 5px 10px;
+    }
+
+    /* tempate styles */
+    .area {
+        text-align: left;
+        padding: 5% 5%;
+    }
+
+    .area h2 {
+        font-size: 2em;
+        padding: 0 0 1em 0;
+    }
+    
+    .area p {
+        font-size: 1em;
+        padding: 1%;
+    }
+
+    .area img {
+        display: block;
+        margin: 20px auto;
+        float: none;
+    }
+
+    .area img.xxsm{
+        width: 50%;
+    }
+
+    .area img.xsm, .area img.sm, .area img.med {
+        width: 90%;
+        display: block;
+        margin: 20px auto;
+        float: none;
+    }
+
+    img.about-a, img.about-b {
+        float: none;
+        display: block;
+        width: 90%;
+        margin: 20px auto;
+        border-radius: 20px;
+    }
+
+    .area h3, .area h4, .area h5 {
+        padding: 5% 2% 2%;
+        font-size: 1.5em;
+    }
+
+    .area ul, .area p {
+        padding: 0 5%;
+        font-size: 1em;
+    }
+
+    .area ul.closer {
+        margin-left: 5%;
+    }
+
+    .click-me a, .click-me-blue a, .click-me-green a {
+        display: inline-block;
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+
+    .click-me-img {
+        height: 20px;
+        padding-top: 2px;
+    }
+
+    /* home style rules */
+  
+    .stacked-table, .container, aside, .grid-area {
+      display: flex;
+      flex-direction: column;
+      padding: 2%;
+    }
+  
+    .stacked-table h3 {
+      font-size: 1.2em;
+      text-align: left;
+    }
+  
+    .stacked-table ul {
+      list-style: none;
+    }
+
+    .column-group {
+        margin: 0 2% 2%;
+    }
+
+    /* resume page */
+    #resume .res-ex {
+        float: none;
+        width: 100%;
+        padding-bottom: 3%;
+    }
+    
+    #resume aside {
+        display: flex;
+        flex-direction: column;
+        margin: 2%;
+    }
+    
+    #resume .res-ex span.period {
+        float: right;
+        font-size: 0.8em;
+        font-weight: normal;
+    }
+    
+    form {
+        grid-template-columns: 1fr;
+        margin: 0 5%;
+    }
+
+    form .submit-btn {
+        display: block;
+        float: center;
+        margin: 0 10%;
+    }
+
+    /* about styles */
+    section.about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    section.about > div:nth-child(3) { 
+        order: 1;
+    }
+
+    section.about > div:nth-child(2) {
+        order: 2;
+    }
+
+    section.about > div:nth-child(1) {
+        order: 3;
+    }
+
+    section.about h3.others {
+        text-align: center;
+        margin: 0;
+    }
+
+    section.about img {
+        width: 80%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    section.about p {
+        margin: 0 2%;
+        text-align: center;
+    }
+
+    /* research & arts styles */
+    .col-1, .col-2, .col-3, .res-ex {
+        display: block;
+        width: 90%;
+        margin: 1% 4%;
+    }
+
+    /* graphics page */
+    section#trio-container {
+        grid-template-columns: 100%;
+        margin: 5%;
+    }
+
+    section#pantheon {
+        grid-template-columns: 100%;
+        padding: 5%;
+    }
+
+    section#pantheon img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    section#apple video {
+        width: 100%;
+        margin: 5% 0;
+    }
+
+    /* sociology */
+    .area .summary-text{
+        text-align: left;
+    }
+
+    /* pychology */
+    iframe {
+        width: 80vw;
+        float: none;
+    }
+    
+}

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<!--
+Student Name: Rebecca Williams
+-->
+<html lang="en">
+
+<head>
+	<title>Resume - Rebecca L Williams</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="icons/bexstar-icon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+IT+Moderna:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+	<header>
+		<header class="header">
+            <a href="index.html" class="logo"> <img src="images/header-logo.png" alt="Bexstar Logo"> </a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                  <img src="icons/hamburger-icon.png" alt="Menu">
+            </label>
+    
+            <nav class="nav"> <!-- change to active-->
+                  <ul>
+                    <li><a class="active" href="resume.html">Resume</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="arts.html">Arts</a></li>
+                    <li><a href="about.html">About</a></li>
+                 </ul>
+            </nav>
+          </header>
+	</header>
+	
+	<main>
+        <h3 class="others">Web Developer | Student</h3>
+        <h6>&#9642;&nbsp;&nbsp; Chicago, IL &nbsp;&nbsp;&#9642;</h6>
+        
+        <div id="resume">
+            <h5>Technical Skills</h5>
+            <table>
+                <tr>
+                    <td>HTML 5 & CSS</td>
+                    <td>Wire-framing</td>
+                    <td>Graphic Design</td>
+                </tr>
+                <tr>
+                    <td>JavaScript - in progress</td>
+                    <td>Google Workspace & Microsoft 365</td>
+                    <td>Adobe Photoshop</td>
+                </tr>
+                <tr>
+                    <td>Responsive Design</td>
+                    <td>Typography</td>
+                    <td>Adobe Illustrator</td>
+                </tr>
+            </table>
+
+            <h5>Projects</h5>
+            <dl>
+                <dt>Personal Portfolio Website - Final Project for CIS 181</dt>
+                <dd class="sub">Visual Studio Code, HTML, CSS, Adobe Photoshop</dd>
+                <dd>Designed and developed a fully responsive portfolio site to highlight personal creative work, analytical research papers/projects and web development skills.</dd>
+            </dl>
+                <ul>
+                    <li>Built Using HTML and CSS in Visual Studio Code with clean, organized code structure.</li>
+                    <li>Showcased original graphic designs, drawings, photography, and videography to reflect personal artistic style.</li>
+                    <li>Applied responsive design principles to ensure accessibility across mobile and desktop devices.</li>
+                </ul>
+            <dl>
+                <dt>Education Psychology & Equity in Learning - Final Project for Introduction to Education</dt>
+                <dd>Solo research project focused on the psychological and systemic factors (both negative and positive) affecting academic achievement among low-income and minority high school students.</dd>
+            </dl>
+                <ul>
+                    <li>Investigated root causes of underachievement through academic research and case studies.</li>
+                    <li>Presented research and program model to peers and faculty, receiving positive feedback for innovation and social impact.</li>
+                </ul>
+
+            <aside>
+                <div class="res-ex">
+                    <h5>Education</h5>
+                    <dl>
+                        <dt>Harold Washington College <span class="period">August 2024 - May 2026</span></dt>
+                        <dd class="sub">Accomplishments:</dd>
+                    </dl>
+                    <ul>
+                        <li>4.0 GPA</li>
+                        <li>One Million Degrees Scholar</li>
+                        <li>Presidential Scholar Award</li>
+                    </ul>
+                    <dl>
+                        <dt>CodeAcademy <span class="period">May 2021 - August 2021</span></dt>
+                        <dd class="sub">Self Paced Program</dd>
+                    </dl>
+                    <ul><li>HTML, CSS, JavaScript</li></ul>
+                </div>
+
+                <div class="res-ex">
+                    <h5>Profesional Experience</h5>
+                    <dl>
+                        <dt>Shift Supervisor<span class="period">May 2020 - Present</span></dt>
+                        <dd class="sub">Starbucks Coffee Company</dd>
+                        <dd>Provided fast, friendly service in a high-volume environment, mastering time management and multi-tasking under pressure.</dd>
+                    </dl>
+                    <dl>
+                        <dt>Color Guard Instructor<span class="period">November 2017 - May 2021</span></dt>
+                        <dd class="sub">Northglenn High School</dd>
+                        <dd>Managed choreography, budgeting, and logistics for a high school color guard program, balancing creative direction with operational coordination.</dd>
+                    </dl>
+                </div>
+            </aside>
+
+            <h5 id="#LM">Let's Meet!</h5>
+        </div>
+
+        <form action="mailto:will.rebecca99@gmail.com" method="post" enctype="text/plain">
+            <fieldset class="field-1"> <legend>Iquiry Information</legend>
+                <p> <label for="myFName">* First Name: </label><input type="text" id="myFName" name="myFName" placeholder="EX: John" required="required"> <br>
+                    <label for="myLName">* Last Name: </label><input type="text" id="myLName" name="myLName" placeholder="EX: Smith" required="required"> <br>
+                    <label for="myEmail">* E-mail: </label><input type="email" id="myEmail" name="myEmail" placeholder="EX: email@example.com" required="required"> <br>
+                    <label for="myPhone">Phone: </label><input type="tel" id="myPhone" name="myPhone" placeholder="EX: 111-222-3333"> <br>
+                    <label for="myCName">* Company Name: </label><input type="text" id="myCName" name="myCName" placeholder="If none, enter 'None'" required="required"> <br>
+                </p>
+                <p> <label for="inquiryList">Inquiry Type</label>
+                    <select id="inquiryList" required="required">
+                        <option value = "0">Select</option>
+                        <option value = "1">Interview</option>
+                        <option value = "2">Collaborate</option>
+                        <option value = "3">Tutoring</option>
+                        <option value = "4">Other</option>
+                    </select>
+                </p>
+                <p> <label for="moreInfo">Additional Information: </label> <br> 
+                    <textarea id="moreInfo" name="moreInfo" placeholder="More information about your inquiry"></textarea>
+                </p>
+            </fieldset> 
+
+            <fieldset class="field-2"> <legend>Availability</legend>
+                <table> <caption>Days of the Week that Work for You</caption>
+                    <tr>
+                        <td><input type="checkbox" id="mondays" name="mondays" value="Mondays">
+                            <label for="mondays">Mondays</label> </td>
+                        <td><input type="checkbox" id="tuesdays" name="tuesdays" value="Tuesdays">
+                            <label for="tuesdays">Tuesdays</label> </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="wednesdays" name="wednesdays" value="Wednesdays">
+                            <label for="wednesdays">Wednesdays</label> </td>
+                        <td><input type="checkbox" id="thursdays" name="thursdays" value="Thursdays">
+                            <label for="thursdays">Thursdays</label> </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="fridays" name="fridays" value="Fridays">
+                            <label for="fridays">Fridays</label></td>
+                        <td><input type="checkbox" id="notWeekDays" name="notWeekDays" value="Not Week Days">
+                            <label for="notWeekDays">Not Week Days</label></td>
+                    </tr>
+                </table>
+
+                <table> <caption>Times that Work for You</caption>
+                    <tr>
+                        <td><input type="checkbox" id="noon2one" name="noon2one" value="12 pm - 1 pm">
+                            <label for="noon2one">12 pm - 1 pm</label></td>
+                        <td><input type="checkbox" id="one2two" name="one2two" value="1 pm - 2 pm">
+                            <label for="one2two">1 pm - 2 pm</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="two2three" name="two2three" value="2 pm - 3 pm">
+                            <label for="two2three">2 pm - 3 pm</label></td>
+                        <td><input type="checkbox" id="three2four" name="three2four" value="3 pm - 4 pm">
+                            <label for="three2four">3 pm - 4 pm</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="four2five" name="four2five" value="4 pm - 5 pm">
+                            <label for="four2five">4 pm - 5 pm</label></td>
+                        <td><input type="checkbox" id="after5" name="after5" value="after 5 pm">
+                            <label for="after5">after 5 pm</label></td>
+                    </tr>
+                </table>
+            </fieldset>
+    
+            <div class="submit-btn"><input type="submit" id="mySubmit" value="Submit"></div>
+        </form>
+
+	</main>
+	
+	<footer>
+		<div class="reach-out">
+			<aside> <h1>Reach Out!</h1> </aside>
+			<aside>
+				<p>Motivated and detail-oriented web development student with a strong foundation in design, coding, 
+					and project management. Want to work together?</p>
+				<div class="click-me">
+					<a href="#LM">Email me<img class="click-me-img" src="icons/arrow-icon.png" alt="Arrow icon"></a>
+				</div>
+				<div class="social-links">
+					<a href="https://www.facebook.com/will.rebecca505/" target="_blank"><img src="icons/facebook.png" alt="Facebook icon"></a>
+					<a href="https://www.instagram.com/remoeboe?igsh=MW4wenk1OGxjNzN6MA%3D%3D&utm_source=qr" target="_blank"><img src="icons/instagram.png" alt="Instagram icon"></a>
+					<a href="https://www.linkedin.com/in/rebecca-l-williams" target="_blank"><img src="icons/linkedin.png" alt="Likedin icon"></a>
+					<a href="https://pin.it/3Ows8yGLO" target="_blank"><img src="icons/pintrest.png" alt="Pintrest icon"></a>
+					<a href="https://www.reddit.com/u/borkalee/s/v0xILAjTcJ" target="_blank"><img src="icons/reddit.png" alt="Reddit icon"></a>
+				</div>
+			</aside>
+		</div>
+
+		<nav class="footer-nav">
+		  <ul>
+			<li><a href="resume.html">Resume</a></li>
+			<li><a href="research.html">Research</a></li>
+			<li><a href="arts.html">Arts</a></li>
+			<li><a href="about.html">About</a></li>
+		  </ul>
+		</nav>
+	</footer>
+	
+</body>
+</html>
